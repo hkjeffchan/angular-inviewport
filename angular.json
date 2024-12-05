@@ -26,21 +26,21 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-inviewport:build"
+            "buildTarget": "angular-inviewport:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-inviewport:build:production"
+              "buildTarget": "angular-inviewport:build:production"
             },
             "no-progress": {
-              "browserTarget": "angular-inviewport:build:no-progress"
+              "buildTarget": "angular-inviewport:build:no-progress"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-inviewport:build"
+            "buildTarget": "angular-inviewport:build"
           }
         },
         "test": {
