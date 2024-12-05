@@ -40,8 +40,6 @@
     "e2e": "ng e2e",
     "coverage": "coveralls < coverage/lcov.info",
     "packagr": "ng-packagr -p package.json",
-    "build:ssr": "npm run build:client-and-server-bundles && npm run webpack:server",
-    "serve:ssr": "node dist/server.js",
     "build:client-and-server-bundles": "ng build --configuration production && ng run angular-inviewport:server",
     "webpack:server": "webpack --config webpack.server.js --progress --colors",
     "copy:readme": "copyfiles README.md ./dist/angular-inviewport",
@@ -52,16 +50,16 @@
   },
   "private": false,
   "devDependencies": {
-    "@angular-devkit/build-angular": "^17.3.11",
-    "@angular/animations": "17.3.12",
-    "@angular/cli": "17.3.11",
-    "@angular/common": "17.3.12",
-    "@angular/compiler": "17.3.12",
-    "@angular/compiler-cli": "17.3.12",
-    "@angular/core": "17.3.12",
-    "@angular/platform-browser": "17.3.12",
-    "@angular/platform-browser-dynamic": "17.3.12",
-    "@angular/platform-server": "17.3.12",
+    "@angular-devkit/build-angular": "^18.2.12",
+    "@angular/animations": "18.2.13",
+    "@angular/cli": "18.2.12",
+    "@angular/common": "18.2.13",
+    "@angular/compiler": "18.2.13",
+    "@angular/compiler-cli": "18.2.13",
+    "@angular/core": "18.2.13",
+    "@angular/platform-browser": "18.2.13",
+    "@angular/platform-browser-dynamic": "18.2.13",
+    "@angular/platform-server": "18.2.13",
     "@thisissoon/schematics": "^1.0.0-alpha.18",
     "@types/jasmine": "~4.3.5",
     "@types/jasminewd2": "~2.0.10",
@@ -84,7 +82,7 @@
     "karma-jasmine-html-reporter": "^2.1.0",
     "karma-mocha-reporter": "^2.2.5",
     "lint-staged": "^14.0.1",
-    "ng-packagr": "^17.3.0",
+    "ng-packagr": "^18.2.1",
     "prettier": "^3.4.2",
     "protractor": "^7.0.0",
     "rxjs": "^7.8.1",
@@ -118,9 +116,6 @@
   "dependencies": {
     "tslib": "^2.8.1"
   },
-  "peerDependencies": {
-    "@angular/common": "^17.3.12",
-    "@angular/core": "^17.3.12"
-  },
+  "peerDependencies": {},
   "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
 }
